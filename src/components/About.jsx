@@ -32,7 +32,7 @@ export default function About() {
           bring your digital visions to life together!
         </p>
         <a
-          href="Resume-Agustio Maitimu.docx"
+          href="Resume-AgustioMaitimu.docx"
           className="mt-1 cursor-pointer text-sm text-[#e45452] md:text-lg"
           download
         >

@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwigrape Nutsnts;
+@tailwind utilities;
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  background-color: #f3efeb;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+@keyframes changeFont {
+  0% {
+    font-family: 'Grape Nuts', sans-serif;
+  }
+  25% {
+    font-family: 'Satisfy', sans-serif;
+  }
+  50% {
+    font-family: 'Lobster', sans-serif;
+  }
+  75% {
+    font-family: 'Shadows Into Light', sans-serif;
+  }
+  100% {
+    font-family: 'Grape Nuts', sans-serif;
+  }
+}
+
+.tools-logo:nth-child(1) {
+  transition-delay: 300ms;
+}
+
+.tools-logo:nth-child(2) {
+  transition-delay: 600ms;
+}
+
+.tools-logo:nth-child(3) {
+  transition-delay: 900ms;
+}
+
+.tools-logo:nth-child(4) {
+  transition-delay: 1200ms;
+}
+
+.tools-logo:nth-child(5) {
+  transition-delay: 1500ms;
+}
+
+.changing-text {
+  animation: changeFont 4s infinite;
+}
+
+.css-animation-hide {
+  opacity: 0;
+  filter: blur(2px);
+  transform: translateX(-100%);
+  transition: all 1.5s;
+}
+
+.css-animation-show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.scroll-down::before,
+.scroll-down::after {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  border: 2px solid #e45452;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 1s ease-in-out infinite;
+}
+
+.scroll-down::after {
+  top: 30%;
+  animation-delay: 0.3s;
+}
+
+@keyframes scroll-down {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 90%;
+  }
+}

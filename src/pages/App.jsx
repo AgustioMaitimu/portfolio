@@ -2,7 +2,7 @@ import React from 'react';
 import Home from '../components/Home';
 import About from '../components/About';
 import Projects from '../components/Projects';
-import SmallProjects from '../components/SmallProjects';
+import Contact from '../components/Contact';
 
 export default function App() {
   function handleScroll() {
@@ -17,6 +17,7 @@ export default function App() {
       <Home />
       <About />
       <Projects />
+      <Contact />
       {/* <SmallProjects /> */}
       <div
         onClick={handleScroll}

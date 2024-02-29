@@ -46,10 +46,10 @@ export default function About() {
             <div className="just flex items-center gap-2">
               <img className="h-6 md:h-7" src={email} alt="" />
               <a
-                href="mailto:agustiomaitimu20@gmail.com"
+                href="mailto:agustiomaitimu04@gmail.com"
                 className="mb-[2px] text-sm underline md:text-lg"
               >
-                agustiomaitimu20@gmail.com
+                agustiomaitimu04@gmail.com
               </a>
             </div>
             <div className="flex items-center gap-2">
